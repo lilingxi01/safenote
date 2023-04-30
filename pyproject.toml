@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "safenote"
+version = "0.1.5"
+description = "SafeNote (Safe Notebook) is a tool for injecting your secrets into Jupyter notebooks environment safer and easier."
+authors = ["Lingxi Li <lilingxi01@gmail.com>"]
+readme = "README.md"
+homepage = "https://safenote.lingxi.li/"
+repository = "https://github.com/lilingxi01/safenote"
+packages = [
+    { include = "safenote" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
